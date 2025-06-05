@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url(./reset.css);
+/* 웹폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: aquamarine;
+}
+
+.con {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: palegoldenrod;
+}
+
+h1 {
+  width: fit-content;
+  height: fit-content;
+  padding: 21px 0;
+}
+
+#gnb > ul {
+  width: fit-content;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  background-color: aquamarine;
+}
+
+.submenu > li > a {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.main_visual > img {
+  width: 1920px;
+  height: 900px;
+  position: relative;
+  top: 80px;
+  left: 0;
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.content_01 {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  text-align: center;
+}
+
+.content_01 h2 {
+  margin-top: 20px;
+  font-size: 58px;
+  line-height: 82px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.btn_wrap {
+  display: flex;
+  gap: 24px;
+}
+
+.btn_wrap > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 210px;
+  height: 56px;
+  background-color: #971cef;
+  border-radius: 56px;
+  color: #fff;
+}
+
+.btn_wrap span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sec_01 {
+  position: relative;
+  top: 80px;
+  width: 1920px;
+  height: 850px;
+}
+
+.con_02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  height: 850px;
+  background-color: #2d125f;
+}
+
+.box_01 {
+  display: flex;
+  justify-content: space-between;
+  width: 628px;
+  height: 400px;
+  background-color: #915dff;
+  border-radius: 30px;
+  padding: 40px 40px 80px 40px;
+  box-sizing: border-box;
+}
+
+.box_01,
+.box_04 > span {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 62px;
+  color: #fff;
+}
+
+.box_01 > img {
+  align-self: self-end;
+  width: 165px;
+}
+
+.box_02 {
+  width: 628px;
+  height: 226px;
+  background-color: #421393;
+  padding: 40px 40px 80px 40px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.box_02,
+.box_03 > span {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 46px;
+  color: #fff;
+}
+
+.bento_group_01 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* .box_02 > span:last-child::after {
+  display: block;
+  content: label;
+  width: 100px;
+  height: 40px;
+  background-color: #915dff;
+} */
+
+.box_03 {
+  width: 628px;
+  height: 226px;
+  background-color: #5624c0;
+  padding: 40px 40px 80px 40px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.box_04 {
+  width: 628px;
+  height: 400px;
+  background-color: #971cef;
+  padding: 40px 40px 80px 40px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.img_wrap {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.bento_group_02 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sec_02 {
+  position: relative;
+  top: 80px;
+  width: 1920px;
+  height: 296px;
+  background-color: #f5f5f7;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.sec_02 > p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+}
+
+.sec_03 {
+  position: relative;
+  top: 80px;
+  width: 1920px;
+  height: fit-content;
+  padding: 100px 0;
+}
+
+.con_03 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #971cef;
+}
+
+.comment > p {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #111;
+}
+
+.container_01 {
+  width: 640px;
+}
+
+.container_01 > img {
+  width: 500px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-top: 200px;
+}
+
+.container_02 {
+  width: 640px;
+}
+
+.container_02 > img {
+  width: 500px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+}
