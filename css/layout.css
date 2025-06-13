@@ -14,6 +14,7 @@ body {
   height: auto;
 }
 
+/* 헤더 */
 header {
   width: 100%;
   height: 80px;
@@ -21,7 +22,6 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: aquamarine;
 }
 
 .con {
@@ -30,7 +30,6 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  background-color: palegoldenrod;
 }
 
 h1 {
@@ -39,39 +38,63 @@ h1 {
   padding: 21px 0;
 }
 
+/* GNB */
 #gnb > ul {
   width: fit-content;
   height: 80px;
   display: flex;
   align-items: center;
   gap: 80px;
-  background-color: aquamarine;
+}
+
+#gnb > ul > li {
+  font-size: 16;
+  font-weight: 600;
+}
+
+#gnb > ul > li a:hover {
+  color: #971cef;
 }
 
 .submenu > li > a {
   display: none;
 }
 
+/* 로그인 아이콘 */
 .icons {
   display: flex;
   align-items: center;
 }
 
-.main_visual > img {
-  width: 1920px;
-  height: 900px;
+.icons > a > img:hover {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%) hue-rotate(275deg) brightness(99%)
+    contrast(97%);
+}
+
+main {
+  width: 100%;
+  height: auto;
   position: relative;
   top: 80px;
-  left: 0;
+}
+/* 메인 비주얼 */
+.main_visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   overflow: hidden;
   background-color: skyblue;
 }
+.main_visual > img {
+  width: 100%;
+  height: 900px;
+}
 
 .content_01 {
-  position: absolute;
-  top: 40%;
-  left: 35%;
   text-align: center;
+  position: absolute;
+  transform: translateY(100px);
 }
 
 .content_01 h2 {
@@ -82,6 +105,7 @@ h1 {
   margin-bottom: 80px;
 }
 
+/* 다운로드 버튼 */
 .btn_wrap {
   display: flex;
   gap: 24px;
@@ -104,10 +128,9 @@ h1 {
   font-weight: 500;
 }
 
+/* 첫번째 섹션 */
 .sec_01 {
-  position: relative;
-  top: 80px;
-  width: 1920px;
+  width: 100%;
   height: 850px;
 }
 
@@ -206,10 +229,9 @@ h1 {
   gap: 24px;
 }
 
+/* 두번째 섹션 */
 .sec_02 {
-  position: relative;
-  top: 80px;
-  width: 1920px;
+  width: 100%;
   height: 296px;
   background-color: #f5f5f7;
   padding: 100px 0;
@@ -223,20 +245,20 @@ h1 {
   text-align: center;
 }
 
+/* 세번째 섹션 */
 .sec_03 {
-  position: relative;
-  top: 80px;
-  width: 1920px;
+  width: 100%;
   height: fit-content;
   padding: 100px 0;
 }
 
 .con_03 {
-  width: 100%;
+  width: 1280px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .comment > span {
@@ -271,8 +293,316 @@ h1 {
 
 .container_02 > img {
   width: 500px;
+  margin-left: 140px;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   margin-bottom: 100px;
+}
+
+/* 네번째 섹션 */
+.sec_04 {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+}
+
+.con_04 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.con_04 p {
+  margin-bottom: 50px;
+}
+
+.con_04 > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+}
+
+/* 다섯째 섹션 */
+.sec_05 {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+}
+
+.con_05 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.con_05 > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+}
+
+/* 여섯째 섹션 */
+.sec_06 {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+}
+
+.con_06 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.con_06 > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+}
+
+/* 일곱번째 섹션 */
+.sec_07 {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  background-color: #2d125f;
+  text-align: center;
+}
+
+.sec_07 > h3 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 52px;
+}
+
+/* 리뷰 슬라이더 -  롤링텍스트 참고*/
+.swiper1 {
+  width: 100%;
+  height: 100%;
+}
+
+.card_img > img {
+  width: 500px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card_text {
+  width: 500px;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.card_text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card_text p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.card_text span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  text-align: right;
+}
+
+/* 여덞번째 섹션 */
+.sec_08 {
+  position: relative;
+
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+  background-color: #5624c0;
+}
+
+.con_08 {
+  width: 1280px;
+  height: 820px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.con_08 > h3 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 52px;
+}
+
+/* 슬라이더 */
+.swiper2 {
+  width: 100%;
+  height: 1250px;
+}
+
+.swiper2 .swiper-slide {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper2 .swiper-wrapper {
+  width: 1280px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.card_game_img > img {
+  width: 305px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card_game_text {
+  width: 305px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.card_game_text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card_game_text > .chips {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chips > div {
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #f1f1f3;
+  border-radius: 30px;
+  padding: 4px 14px;
+  box-sizing: border-box;
+}
+
+.card_game_text p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card_game_text span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  text-align: right;
+}
+
+.sec_09 {
+  position: relative;
+
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+  background: linear-gradient(0deg, rgba(66, 28, 145, 1) 0%, rgba(37, 11, 91, 1) 100%);
+}
+
+/* CTA */
+.cta > h2 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 62px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.cta > .icon_group {
+  display: flex;
+  justify-content: center;
+}
+
+.cta > .icon_group > img {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.cta > .btn_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* 푸터 */
+footer {
+  position: relative;
+
+  width: 100%;
+  height: fit-content;
+  padding: 80px 0;
+  background-color: #f1f1f3;
+}
+
+.navigation {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.list > a {
+  font-size: 26px;
+  font-weight: 500;
+  color: #111;
+}
+
+.list ul > li:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.list li {
+  font-size: 14px;
+  line-height: 34px;
+  color: #555;
+}
+
+.description {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.navigation > p {
+  font-size: 14px;
+  color: #555;
 }
