@@ -386,12 +386,17 @@ main {
 }
 
 /* 리뷰 슬라이더 -  롤링텍스트 참고*/
-.swiper1 {
+.sec_07 {
   width: 100%;
   height: 100%;
 }
 
-.card_img > img {
+.card_wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.card > img {
   width: 500px;
   height: 340px;
   object-fit: cover;
@@ -429,7 +434,6 @@ main {
 /* 여덞번째 섹션 */
 .sec_08 {
   position: relative;
-
   width: 100%;
   height: fit-content;
   padding: 100px 0;
