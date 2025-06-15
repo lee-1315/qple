@@ -1,11 +1,12 @@
 @charset "utf-8";
 @import url(./reset.css);
 /* 웹폰트 */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css");
 
 body {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
 }
 
@@ -67,8 +68,8 @@ h1 {
 }
 
 .icons > a > img:hover {
-  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%) hue-rotate(275deg) brightness(99%)
-    contrast(97%);
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%)
+    hue-rotate(275deg) brightness(99%) contrast(97%);
 }
 
 main {
@@ -191,14 +192,6 @@ main {
   gap: 24px;
 }
 
-/* .box_02 > span:last-child::after {
-  display: block;
-  content: label;
-  width: 100px;
-  height: 40px;
-  background-color: #915dff;
-} */
-
 .box_03 {
   width: 628px;
   height: 226px;
@@ -215,12 +208,16 @@ main {
   padding: 40px 40px 80px 40px;
   border-radius: 30px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .img_wrap {
   display: flex;
-  justify-content: center;
   gap: 80px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -25%;
 }
 
 .bento_group_02 {
@@ -285,6 +282,7 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   margin-top: 200px;
+  box-sizing: border-box;
 }
 
 .container_02 {
@@ -298,6 +296,7 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   margin-bottom: 100px;
+  box-sizing: border-box;
 }
 
 /* 네번째 섹션 */
@@ -324,6 +323,7 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   margin-bottom: 100px;
+  box-sizing: border-box;
 }
 
 /* 다섯째 섹션 */
@@ -331,6 +331,7 @@ main {
   width: 100%;
   height: fit-content;
   padding: 100px 0;
+  box-sizing: border-box;
 }
 
 .con_05 {
@@ -346,6 +347,7 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   margin-bottom: 100px;
+  box-sizing: border-box;
 }
 
 /* 여섯째 섹션 */
@@ -368,27 +370,80 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   margin-bottom: 100px;
+  box-sizing: border-box;
 }
 
 /* 일곱번째 섹션 */
 .sec_07 {
   width: 100%;
-  height: 100%;
-  padding: 100px 0;
+  height: 904px;
   background-color: #2d125f;
-  text-align: center;
+  padding-top: 100px;
+  box-sizing: border-box;
 }
 
 .sec_07 > h3 {
+  width: 1280px;
   font-size: 42px;
   color: #fff;
+  margin: 0 auto;
   margin-bottom: 52px;
 }
 
-/* 리뷰 슬라이더 -  롤링텍스트 참고*/
-.sec_07 {
+/* 리뷰 -  롤링텍스트 참고*/
+.card_rolling {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.card_rolling > .card_wrap_01,
+.card_wrap_02 {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  will-change: transform;
+  width: max-content;
+}
+
+.card_rolling > .card_wrap_01,
+.card_wrap_0 > .card {
+  flex-shrink: 0;
+}
+
+.card_wrap_01 {
+  animation: rolling_01 12s linear infinite reverse;
+}
+
+.card_wrap_01 > .card:last-of-type {
+  margin-right: 20px;
+}
+
+.card_wrap_02 {
+  animation: rolling_02 12s linear infinite reverse;
+}
+
+@keyframes rolling_01 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes rolling_02 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .card_wrap {
@@ -433,18 +488,15 @@ main {
 
 /* 여덞번째 섹션 */
 .sec_08 {
-  position: relative;
-  width: 100%;
-  height: fit-content;
+  height: 100%;
   padding: 100px 0;
   background-color: #5624c0;
+  box-sizing: border-box;
 }
 
 .con_08 {
   width: 1280px;
-  height: 820px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .con_08 > h3 {
@@ -453,23 +505,11 @@ main {
   margin-bottom: 52px;
 }
 
-/* 슬라이더 */
-.swiper2 {
-  width: 100%;
-  height: 1250px;
-}
-
-.swiper2 .swiper-slide {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.swiper2 .swiper-wrapper {
+/* 4*2 슬라이더 */
+.swiper {
   width: 1280px;
-  height: 400px;
-  margin: 0 auto;
+  height: 820px;
+  display: flex;
 }
 
 .card_game_img > img {
@@ -477,6 +517,7 @@ main {
   height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  box-sizing: border-box;
 }
 
 .card_game_text {
@@ -521,23 +562,14 @@ main {
   text-align: right;
 }
 
+/* 아홉번째 섹션 */
 .sec_09 {
-  position: relative;
-
-  width: 100%;
-  height: fit-content;
   padding: 100px 0;
-  background: linear-gradient(0deg, rgba(66, 28, 145, 1) 0%, rgba(37, 11, 91, 1) 100%);
-}
-
-/* CTA */
-.cta > h2 {
-  font-size: 42px;
-  font-weight: 500;
-  line-height: 62px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 52px;
+  background: linear-gradient(
+    0deg,
+    rgba(66, 28, 145, 1) 0%,
+    rgba(37, 11, 91, 1) 100%
+  );
 }
 
 .cta > .icon_group {
@@ -548,6 +580,16 @@ main {
 .cta > .icon_group > img {
   padding: 20px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.cta > h2 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 62px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 52px;
 }
 
 .cta > .btn_wrap {
@@ -557,12 +599,13 @@ main {
 
 /* 푸터 */
 footer {
-  position: relative;
-
   width: 100%;
-  height: fit-content;
+  height: auto;
+  position: relative;
+  top: 80px;
   padding: 80px 0;
   background-color: #f1f1f3;
+  box-sizing: border-box;
 }
 
 .navigation {
