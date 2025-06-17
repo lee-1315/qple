@@ -4,33 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/service.css" />
   </head>
   <body>
     <div class="container">
       <div id="header"></div>
       <main>
-        <section class="main_visual">
-          <div class="content_01">
+        <section class="main_visual_01">
+          <div class="main_text">
             <h2>
               콘솔게임의 불편함을<br />
               즐거움으로 전환.
             </h2>
           </div>
+          <div class="card_mini_rolling">
+            <div class="card_mini_wrap_01">
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+            </div>
+            <div class="card_mini_wrap_02">
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+              <div class="card_mini">
+                <p>카드 블라블라</p>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <!-- 첫번째 섹션 -->
+        <section class="sec_04 pin">
+          <div class="con_04">
+            <div class="comment">
+              <span>검색</span>
+              <p>
+                게임을 검색해서<br />
+                원하는 게임파티만<br />
+                골라보세요
+              </p>
+              <img src="../../img/inpubox.svg" alt="검색창" />
+            </div>
+            <img src="../../img/main_sec_img_01.svg" alt="검색" />
+          </div>
+        </section>
+
+        <!-- 두번째 섹션 -->
+        <section class="sec_05 pin">
+          <div class="con_05">
+            <div class="comment">
+              <span>알림</span>
+              <p>
+                알림 기능으로<br />
+                약속 일정을 확인하고<br />
+                리마인드까지
+              </p>
+            </div>
+            <img src="../../img/main_sec_img_02.svg" alt="알림" />
+          </div>
+        </section>
+
+        <!-- 세번째 섹션 -->
+        <section class="sec_06">
+          <div class="con_06">
+            <div class="comment">
+              <span>비매너 방지</span>
+              <p>
+                비매너 등급 뱃지로<br />
+                비매너 회원을 구별,<br />
+                방지할 수 있어요
+              </p>
+            </div>
+            <img src="../../img/main_sec_img_05.jpg" alt="비매너 방지" />
+          </div>
+        </section>
+        <div id="cta"></div>
       </main>
       <div id="footer"></div>
     </div>
   </body>
   <script>
     // 헤더
-    fetch('../component/header.html')
+    fetch('../../component/header.html')
       .then((res) => res.text())
       .then((data) => (document.getElementById('header').innerHTML = data));
 
+    // CTA
+    fetch('../../component/cta.html')
+      .then((res) => res.text())
+      .then((data) => (document.getElementById('cta').innerHTML = data));
+
     // 푸터
-    fetch('../component/footer.html')
+    fetch('../../component/footer.html')
       .then((res) => res.text())
       .then((data) => (document.getElementById('footer').innerHTML = data));
   </script>
