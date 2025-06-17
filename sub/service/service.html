@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header"></div>
+      <main>
+        <section class="main_visual">
+          <div class="content_01">
+            <h2>
+              콘솔게임의 불편함을<br />
+              즐거움으로 전환.
+            </h2>
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script>
+    // 헤더
+    fetch('../component/header.html')
+      .then((res) => res.text())
+      .then((data) => (document.getElementById('header').innerHTML = data));
+
+    // 푸터
+    fetch('../component/footer.html')
+      .then((res) => res.text())
+      .then((data) => (document.getElementById('footer').innerHTML = data));
+  </script>
+</html>
