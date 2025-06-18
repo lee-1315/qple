@@ -8,35 +8,113 @@ body {
     sans-serif;
 }
 
-.main_text {
+main {
   width: 100%;
   height: auto;
+  position: relative;
+  top: 80px;
+}
+
+.main_visual_01 {
+  width: 100%;
+  height: 554px;
+}
+
+.main_text {
+  width: 1280px;
+  height: 500px;
+  margin: 0 auto;
   background-color: #fff;
   padding: 100px 0;
   box-sizing: border-box;
 }
 
 .main_text > h2 {
+  margin-top: 20px;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 82px;
+  text-align: center;
+  color: #111;
+}
+
+.card_mini_rolling > p {
   width: 1280px;
+  margin: 0 auto;
   font-size: 42px;
   font-weight: 600;
-  color: #111;
-  margin: 0 auto;
   margin-bottom: 52px;
-}
-
-.card_mini_rolling {
-  width: 100%;
-  height: auto;
-  background-color: #971cef;
-  padding: 100px 0;
-  box-sizing: border-box;
-}
-
-.card_mini_wrap_01 {
-  display: flex;
+  color: #fff;
 }
 
 .card_mini {
+  width: 500px;
+  height: 250px;
   background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.card_mini > p {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #971cef;
+}
+
+/* 롤링 카드*/
+.card_mini_rolling {
+  width: 100%;
+  height: 554px;
+  background-color: #971cef;
+  padding: 100px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.card_mini_rolling > .card_mini_wrap_01,
+.card_mini_wrap_02 {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 100px;
+  will-change: transform;
+  width: max-content;
+}
+
+.card_mini_rolling > .card_mini_wrap_01,
+.card_mini_wrap_02 > .card_mini {
+  flex-shrink: 0;
+}
+
+.card_mini_wrap_01 {
+  animation: rolling_01 12s linear infinite reverse;
+}
+
+.card_mini_wrap_01 > .card_mini:last-of-type {
+  margin-right: 20px;
+}
+
+.card_mini_wrap_02 {
+  animation: rolling_02 12s linear infinite reverse;
+}
+
+@keyframes rolling_01 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes rolling_02 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
