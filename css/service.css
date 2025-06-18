@@ -8,6 +8,11 @@ body {
     sans-serif;
 }
 
+.container_02 {
+  width: 100%;
+  height: auto;
+}
+
 main {
   width: 100%;
   height: auto;
@@ -15,27 +20,40 @@ main {
   top: 80px;
 }
 
-.main_visual_01 {
+.sec_01 {
   width: 100%;
-  height: 554px;
-}
-
-.main_text {
-  width: 1280px;
   height: 500px;
-  margin: 0 auto;
   background-color: #fff;
-  padding: 100px 0;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main_text > h2 {
-  margin-top: 20px;
+.sec_01 > h2 {
+  width: 1280px;
   font-size: 58px;
   font-weight: 600;
   line-height: 82px;
   text-align: center;
   color: #111;
+}
+
+.sec_02 {
+  width: 100%;
+  height: 554px;
+  position: relative;
+}
+
+/* 롤링 카드*/
+.card_mini_rolling {
+  width: 100%;
+  height: 554px;
+  background-color: #971cef;
+  padding: 100px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
 }
 
 .card_mini_rolling > p {
@@ -45,6 +63,16 @@ main {
   font-weight: 600;
   margin-bottom: 52px;
   color: #fff;
+}
+
+.card_mini_rolling > .card_mini_wrap_01,
+.card_mini_wrap_02 {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 100px;
+  will-change: transform;
+  width: max-content;
 }
 
 .card_mini {
@@ -61,27 +89,6 @@ main {
   font-weight: 600;
   line-height: 42px;
   color: #971cef;
-}
-
-/* 롤링 카드*/
-.card_mini_rolling {
-  width: 100%;
-  height: 554px;
-  background-color: #971cef;
-  padding: 100px 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-}
-
-.card_mini_rolling > .card_mini_wrap_01,
-.card_mini_wrap_02 {
-  display: flex;
-  gap: 20px;
-  position: absolute;
-  bottom: 100px;
-  will-change: transform;
-  width: max-content;
 }
 
 .card_mini_rolling > .card_mini_wrap_01,
