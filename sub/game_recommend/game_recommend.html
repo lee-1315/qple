@@ -3,7 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>게임추천</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/game_recommend.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="header"></div>
+    </header>
+    <main>
+      <section class="ads">
+        <h2>게임 광고 배너</h2>
+        <!-- 다운로드 버튼 -->
+        <div class="btn_wrap">
+          <a href="#">
+            <div>
+              <img src="../../img/icon_googleplay.svg" alt="google play" />
+            </div>
+            <span>Android</span>
+          </a>
+          <a href="#">
+            <div>
+              <img src="../../img/icon_appstore.svg" alt="app store" />
+            </div>
+            <span>iOS</span>
+          </a>
+          <a href="#">
+            <div>
+              <img src="../../img/icon_windows.svg" alt="window" />
+            </div>
+            <span>Window</span>
+          </a>
+        </div>
+      </section>
+      <div id="game"></div>
+      <div id="cta"></div>
+    </main>
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <script>
+      // 헤더
+      fetch('../../component/header.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('header').innerHTML = data));
+
+      // 게임추천
+      fetch('../../component/game.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('game').innerHTML = data));
+
+      // CTA
+      fetch('../../component/cta.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('cta').innerHTML = data));
+
+      // 푸터
+      fetch('../../component/footer.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('footer').innerHTML = data));
+    </script>
+  </body>
 </html>
