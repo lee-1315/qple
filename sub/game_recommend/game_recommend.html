@@ -7,43 +7,51 @@
     <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
     <link rel="stylesheet" href="../../css/game_recommend.css" />
+    <!-- 스와이퍼 슬라이더 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <header>
-      <div id="header"></div>
-    </header>
-    <main>
-      <section class="ads">
-        <h2>게임 광고 배너</h2>
-        <!-- 다운로드 버튼 -->
-        <div class="btn_wrap">
-          <a href="#">
-            <div>
-              <img src="../../img/icon_googleplay.svg" alt="google play" />
-            </div>
-            <span>Android</span>
-          </a>
-          <a href="#">
-            <div>
-              <img src="../../img/icon_appstore.svg" alt="app store" />
-            </div>
-            <span>iOS</span>
-          </a>
-          <a href="#">
-            <div>
-              <img src="../../img/icon_windows.svg" alt="window" />
-            </div>
-            <span>Window</span>
-          </a>
-        </div>
-      </section>
-      <div id="game"></div>
-      <div id="cta"></div>
-    </main>
-    <footer>
-      <div id="footer"></div>
-    </footer>
+    <div class="container_02">
+      <header>
+        <div id="header"></div>
+      </header>
+      <main>
+        <section class="ads">
+          <div>
+            <h2>AD</h2>
+          </div>
+          <!-- 다운로드 버튼 -->
+          <div class="btn_wrap">
+            <a href="#">
+              <div>
+                <img src="../../img/icon_googleplay.svg" alt="google play" />
+              </div>
+              <span>Android</span>
+            </a>
+            <a href="#">
+              <div>
+                <img src="../../img/icon_appstore.svg" alt="app store" />
+              </div>
+              <span>iOS</span>
+            </a>
+            <a href="#">
+              <div>
+                <img src="../../img/icon_windows.svg" alt="window" />
+              </div>
+              <span>Window</span>
+            </a>
+          </div>
+        </section>
+        <div id="game"></div>
+        <div id="cta"></div>
+      </main>
+      <footer>
+        <div id="footer"></div>
+      </footer>
+    </div>
 
+    <script src="../../js/slide.js"></script>
     <script>
       // 헤더
       fetch('../../component/header.html')
