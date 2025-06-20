@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url(./reset.css);
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 80px;
+}
+
+.sec_01 {
+  width: 100%;
+  height: 900px;
+  background: url(../img/bg_baldus_gate_01.jpg) no-repeat;
+  object-fit: cover;
+}
+
+.game_content {
+  width: 520px;
+  padding: 100px 0;
+  position: absolute;
+  left: 70%;
+  box-sizing: border-box;
+}
+
+.game_title {
+  margin-bottom: 52px;
+}
+
+.game_title h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.game_title > span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.sec_01 p {
+  font-size: 22px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 38px;
+  margin-bottom: 52px;
+}
+
+.game_spec {
+  margin-bottom: 124px;
+}
+
+.game_spec div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.game_spec img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.game_spec span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.warning_mark {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 52px;
+}
+
+.sec_02 {
+  width: 100%;
+  height: 850px;
+  background: url(../img/bg_baldus_gate_02.jpg) no-repeat;
+  object-fit: cover;
+}
+
+.game_description {
+  color: #fff;
+}
+
+.game_description span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #971cef;
+}
+
+.game_description h3 {
+  font-size: 42px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 62px;
+}
+
+.game_description p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 33px;
+}
