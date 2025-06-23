@@ -500,7 +500,7 @@ main {
   box-sizing: border-box;
 }
 
-.sec_08 > h3 {
+.sec_08 > .swiper > h3 {
   font-size: 42px;
   color: #fff;
   margin-bottom: 52px;
@@ -509,7 +509,7 @@ main {
 /* 4*2 슬라이더 */
 .swiper {
   width: 1280px;
-  height: 820px;
+  height: 1050px;
 }
 
 .swiper-wrapper {
