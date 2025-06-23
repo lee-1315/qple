@@ -22,11 +22,11 @@ main {
   object-fit: cover;
 }
 
-.game_content {
+.game_content_01 {
   width: 520px;
   padding: 100px 0;
   position: absolute;
-  left: 70%;
+  left: 57%;
   box-sizing: border-box;
 }
 
@@ -90,14 +90,25 @@ main {
   object-fit: cover;
 }
 
+.game_content_02 {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .game_description {
   color: #fff;
 }
 
 .game_description span {
+  display: block;
   font-size: 20px;
   font-weight: 600;
   color: #971cef;
+  margin-bottom: 30px;
 }
 
 .game_description h3 {
@@ -105,6 +116,7 @@ main {
   font-weight: 600;
   color: #fff;
   line-height: 62px;
+  margin-bottom: 52px;
 }
 
 .game_description p {
@@ -112,4 +124,40 @@ main {
   font-weight: 400;
   color: #fff;
   line-height: 33px;
+}
+
+.sec_03 {
+  width: 100%;
+  height: 460px;
+  background-color: #091320;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.game_content_03 {
+  width: 1280px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.award_wrap {
+  width: 947px;
+  height: fit-content;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.award_wrap img {
+  width: 101px;
+  height: 60px;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+.award_wrap img:hover {
+  filter: grayscale(0);
 }
