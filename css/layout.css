@@ -54,12 +54,59 @@ h1 {
   font-weight: 600;
 }
 
-#gnb > ul > li a:hover {
+#gnb > ul > li > a:hover {
   color: #971cef;
 }
 
+.submenu {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 100px;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.gnb:hover .submenu {
+  height: 150px;
+}
+
+.submenu > li {
+  width: 100px;
+  line-height: 40px;
+}
+
 .submenu > li > a {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu > li:hover a {
+  color: #971cef;
+}
+
+.submenu > li:hover img {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%) hue-rotate(275deg) brightness(99%)
+    contrast(97%);
+}
+
+/* 2차 메뉴 배경 */
+#gnb::after {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 80px;
+  left: 0;
+  transition: height 0.5s ease-in-out, background-color 0.3s;
+}
+
+#gnb:hover::after {
+  height: 200px;
+  background-color: rgba(255, 255, 255);
 }
 
 /* 로그인 아이콘 */
