@@ -9,7 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <!-- 스와이퍼 슬라이더 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
@@ -57,7 +60,7 @@
                 </ul>
               </li>
               <li>
-                <a href="#">게임추천</a>
+                <a href="./sub/game_recommend/game_recommend.html">게임추천</a>
               </li>
               <li>
                 <a href="#">고객지원</a>
@@ -173,7 +176,7 @@
         <section class="sec_03">
           <div class="con_03">
             <div class="container_01">
-              <div class="comment">
+              <div class="comment_01">
                 <span>번개챗 생성</span>
                 <p>
                   간편하고 빠르게<br />
@@ -186,7 +189,7 @@
 
             <div class="container_02">
               <img src="./img/main_sec_img_03.svg" alt="실시간 번개챗" />
-              <div class="comment">
+              <div class="comment_01">
                 <span>실시간 번개챗</span>
                 <p>
                   시간에 구애받지 않고<br />
@@ -208,9 +211,9 @@
                 원하는 게임파티만<br />
                 골라보세요
               </p>
-              <img src="./img/inpubox.svg" alt="검색창" />
+              <img src="./img/inpubox.svg" alt="검색창" class="fade_img" />
             </div>
-            <img src="./img/main_sec_img_01.svg" alt="검색" />
+            <img src="./img/main_sec_img_01.svg" alt="검색" class="fade_img" />
           </div>
         </section>
 
@@ -225,7 +228,7 @@
                 리마인드까지
               </p>
             </div>
-            <img src="./img/main_sec_img_02.svg" alt="알림" />
+            <img src="./img/main_sec_img_02.svg" alt="알림" class="fade_img" />
           </div>
         </section>
 
@@ -240,7 +243,11 @@
                 방지할 수 있어요
               </p>
             </div>
-            <img src="./img/main_sec_img_05.jpg" alt="비매너 방지" />
+            <img
+              src="./img/main_sec_img_05.jpg"
+              alt="비매너 방지"
+              class="fade_img"
+            />
           </div>
         </section>
 
@@ -344,126 +351,240 @@
 
         <!-- 여덞번째 섹션 -->
         <section class="sec_08">
-          <div class="swiper">
-            <h3>퀵플로 재미를 더하는 게임</h3>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="./img/img_game_01.jpg" />
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <!-- <div class="ps5">PS5</div> -->
-                      <div class="nintendo">Nintendo</div>
-                      <!-- <div class="pc">PC</div> -->
+          <h3>퀵플로 재미를 더하는 게임</h3>
+          <div class="swiper-area">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_01.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <!-- <div class="ps5">PS5</div> -->
+                        <div class="nintendo">Nintendo</div>
+                        <!-- <div class="pc">PC</div> -->
+                      </div>
+                      <p>모여봐요 동물의 숲</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>모여봐요 동물의 숲</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="./img/img_game_02.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_02.jpg" />
 
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <!-- <div class="ps5">PS5</div> -->
-                      <div class="nintendo">Nintendo</div>
-                      <!-- <div class="pc">PC</div> -->
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <!-- <div class="ps5">PS5</div> -->
+                        <div class="nintendo">Nintendo</div>
+                        <!-- <div class="pc">PC</div> -->
+                      </div>
+                      <p>슈퍼 마리오 파티 잼버리</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>슈퍼 마리오 파티 잼버리</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="./img/img_game_03.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_03.jpg" />
 
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <!-- <div class="ps5">PS5</div> -->
-                      <div class="nintendo">Nintendo</div>
-                      <!-- <div class="pc">PC</div> -->
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <!-- <div class="ps5">PS5</div> -->
+                        <div class="nintendo">Nintendo</div>
+                        <!-- <div class="pc">PC</div> -->
+                      </div>
+                      <p>스플래툰 3</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>스플래툰 3</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="./img/img_game_04.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_04.jpg" />
 
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <!-- <div class="ps5">PS5</div> -->
-                      <div class="nintendo">Nintendo</div>
-                      <!-- <div class="pc">PC</div> -->
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <!-- <div class="ps5">PS5</div> -->
+                        <div class="nintendo">Nintendo</div>
+                        <!-- <div class="pc">PC</div> -->
+                      </div>
+                      <p>드래곤 퀘스트 빌더즈 2</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>드래곤 퀘스트 빌더즈 2</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./sub/game_recommend/game_baldus_gate.html">
-                  <img src="./img/img_game_05.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./sub/game_recommend/game_baldus_gate.html">
+                    <img src="./img/img_game_05.jpg" />
 
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <div class="ps5">PS5</div>
-                      <!-- <div class="nintendo">Nintendo</div> -->
-                      <div class="pc">PC</div>
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>발더스 게이트 3</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>발더스 게이트 3</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="./img/img_game_06.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_06.jpg" />
 
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <div class="ps5">PS5</div>
-                      <!-- <div class="nintendo">Nintendo</div> -->
-                      <div class="pc">PC</div>
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>디아블로 4</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>디아블로 4</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="./img/img_game_07.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_07.jpg" />
 
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <div class="ps5">PS5</div>
-                      <!-- <div class="nintendo">Nintendo</div> -->
-                      <div class="pc">PC</div>
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>잇 테이크 투</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>잇 테이크 투</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img src="./img/img_game_08.jpg" />
-                  <div class="card_game_text">
-                    <div class="chips">
-                      <div class="ps5">PS5</div>
-                      <!-- <div class="nintendo">Nintendo</div> -->
-                      <div class="pc">PC</div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
                     </div>
-                    <p>스플릿 픽션</p>
-                    <span>2025-03-23</span>
-                  </div>
-                </a>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_game_08.jpg" />
+                    <div class="card_game_text">
+                      <div class="chips">
+                        <div class="ps5">PS5</div>
+                        <!-- <div class="nintendo">Nintendo</div> -->
+                        <div class="pc">PC</div>
+                      </div>
+                      <p>스플릿 픽션</p>
+                      <span>2025-03-23</span>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="swiper-button-prev"></div>

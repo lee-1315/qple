@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../../css/layout.css" />
     <link rel="stylesheet" href="../../css/game_recommend.css" />
     <!-- 스와이퍼 슬라이더 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
@@ -54,24 +57,24 @@
     <script src="../../js/slide.js"></script>
     <script>
       // 헤더
-      fetch('../../component/header.html')
+      fetch("../../component/header.html")
         .then((res) => res.text())
-        .then((data) => (document.getElementById('header').innerHTML = data));
+        .then((data) => (document.getElementById("header").innerHTML = data));
 
       // 게임추천
-      fetch('../../component/game.html')
+      fetch("../../component/game.html")
         .then((res) => res.text())
-        .then((data) => (document.getElementById('game').innerHTML = data));
+        .then((data) => (document.getElementById("game").innerHTML = data));
 
       // CTA
-      fetch('../../component/cta.html')
+      fetch("../../component/cta.html")
         .then((res) => res.text())
-        .then((data) => (document.getElementById('cta').innerHTML = data));
+        .then((data) => (document.getElementById("cta").innerHTML = data));
 
       // 푸터
-      fetch('../../component/footer.html')
+      fetch("../../component/footer.html")
         .then((res) => res.text())
-        .then((data) => (document.getElementById('footer').innerHTML = data));
+        .then((data) => (document.getElementById("footer").innerHTML = data));
     </script>
   </body>
 </html>
