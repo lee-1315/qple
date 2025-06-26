@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url(./reset.css);
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+}
+
+#game {
+  width: 100%;
+  height: auto;
+  background-color: #5624c0;
+  padding: 100px 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#game > h3 {
+  width: 1280px;
+  font-size: 42px;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 52px;
+}
+
+/* 4*2 슬라이더 */
+.swiper-area {
+  position: relative;
+  width: 1600px;
+  height: fit-content;
+  margin: 0 auto;
+  /* padding-bottom: 80px; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-weight: bold;
+}
+
+.swiper {
+  width: 1280px;
+  margin: 0 auto;
+  /* position: absolute; */
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 305px;
+  height: 400px;
+}
+
+.swiper-slide a {
+  display: block;
+  width: 305px;
+  height: 400px;
+}
+
+.swiper-slide a img {
+  width: 305px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* 카드 */
+.card_game_text {
+  width: 305px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.card_game_text > .chips {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chips > div {
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #f1f1f3;
+  border-radius: 30px;
+  padding: 4px 14px;
+  box-sizing: border-box;
+}
+
+.card_game_text p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card_game_text span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  text-align: right;
+}

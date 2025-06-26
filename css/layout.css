@@ -1,12 +1,11 @@
 @charset "utf-8";
 @import url(./reset.css);
 /* 웹폰트 */
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
 
 body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
 }
 
@@ -28,7 +27,7 @@ header {
 }
 
 header > .con {
-  width: 1400px;
+  width: 1280px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -74,8 +73,7 @@ h1 {
 /* 2차 메뉴 */
 .submenu_wrap {
   min-width: 180px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: #fff;
   position: absolute;
   /* 부모의 반만큼 오른쪽으로 보냄 */
   left: 50%;
@@ -83,12 +81,13 @@ h1 {
   transform: translateX(-50%);
   top: 110px;
   border-radius: 20px;
-  padding-top: 10px;
+  padding-top: 0px;
   box-shadow: 0px 5px 45px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  display: none;
+  /* display: none; */
+  height: 0px;
   justify-content: center;
-  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 .submenu_wrap .submenu {
@@ -98,18 +97,10 @@ h1 {
 }
 
 #gnb > ul > li:hover .submenu_wrap {
-  display: flex;
+  /* display: flex; */
+  padding-top: 10px;
+  height: 180px;
 }
-
-/* .submenu {
-  width: 100%;
-  height: 0;
-  position: absolute;
-  top: 100px;
-  z-index: 1000;
-  transition: 0.5s;
-  overflow: hidden;
-} */
 
 .submenu > li {
   display: flex;
@@ -145,28 +136,14 @@ h1 {
   height: 200px;
 }
 
+.submenu > li img {
+  transition: 0.3s;
+}
+
 .submenu > li:hover img {
   filter: invert(1);
 }
 
-/* 2차 메뉴 배경 */
-/* #gnb::after {
-  content: "";
-  display: block;
-  width: 100vw;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 80px;
-  left: 0;
-  transition: height 0.5s ease-in-out, background-color 0.3s;
-}
-
-#gnb:hover::after {
-  height: 200px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
- */
 /* 로그인 아이콘 */
 .icons {
   display: flex;
@@ -174,16 +151,16 @@ h1 {
 }
 
 .icons > a > img:hover {
-  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%)
-    hue-rotate(275deg) brightness(99%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%) hue-rotate(275deg) brightness(99%)
+    contrast(97%);
 }
 
 main {
   width: 100%;
   height: auto;
-  position: relative;
-  top: 80px;
+  padding-top: 80px;
 }
+
 /* 메인 비주얼 */
 .main_visual {
   display: flex;
@@ -502,7 +479,7 @@ main {
   width: 100%;
   height: 904px;
   background-color: #2d125f;
-  padding-top: 100px;
+  padding: 100px 0px;
   box-sizing: border-box;
 }
 
@@ -614,8 +591,8 @@ main {
 .sec_08 {
   width: 100%;
   height: 100%;
-  padding: 100px 0;
   background-color: #5624c0;
+  padding: 100px 0px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -632,9 +609,9 @@ main {
 .swiper-area {
   position: relative;
   width: 1600px;
-  height: 770px;
+  height: fit-content;
   margin: 0 auto;
-  padding-bottom: 120px;
+  /* padding-bottom: 80px; */
 }
 
 .swiper-button-prev,
@@ -645,7 +622,7 @@ main {
 .swiper {
   width: 1280px;
   margin: 0 auto;
-  position: relative;
+  /* position: absolute; */
   overflow: hidden;
 }
 
@@ -655,7 +632,7 @@ main {
 }
 
 .swiper-slide a img {
-  width: 100%;
+  width: 305px;
   height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
@@ -703,11 +680,7 @@ main {
 /* 아홉번째 섹션 */
 .sec_09 {
   padding: 100px 0;
-  background: linear-gradient(
-    0deg,
-    rgba(66, 28, 145, 1) 0%,
-    rgba(37, 11, 91, 1) 100%
-  );
+  background: linear-gradient(0deg, rgba(66, 28, 145, 1) 0%, rgba(37, 11, 91, 1) 100%);
   box-sizing: border-box;
 }
 
@@ -740,16 +713,15 @@ main {
 footer {
   width: 100%;
   height: auto;
-  position: relative;
-  top: 80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* position: relative;
+  top: 80px; */
+  padding: 80px 0px;
   background-color: #f1f1f3;
-  box-sizing: border-box;
 }
 
 .navigation {
   width: 1280px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
