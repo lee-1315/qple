@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="../../css/header.css" />
     <link rel="stylesheet" href="../../css/game_baldus_gate.css" />
+    <link rel="stylesheet" href="../../css/slide.css" />
     <link rel="stylesheet" href="../../css/cta.css" />
     <link rel="stylesheet" href="../../css/footer.css" />
 
@@ -118,6 +119,7 @@
           </div>
         </div>
       </section>
+      <div id="slide"></div>
       <div id="cta"></div>
     </main>
     <footer id="footer"></footer>
@@ -127,6 +129,11 @@
       fetch('../../component/header.html')
         .then((res) => res.text())
         .then((data) => (document.getElementById('header').innerHTML = data));
+
+      // 슬라이드
+      fetch('../../component/slide.html')
+        .then((res) => res.text())
+        .then((data) => (document.getElementById('slide').innerHTML = data));
 
       // CTA
       fetch('../../component/cta.html')
@@ -138,5 +145,7 @@
         .then((res) => res.text())
         .then((data) => (document.getElementById('footer').innerHTML = data));
     </script>
+
+    <script src="../../js/slide_02.js"></script>
   </body>
 </html>

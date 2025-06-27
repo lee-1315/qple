@@ -20,93 +20,67 @@ main {
   top: 80px;
 }
 
+/* 메인 비주얼 */
 .ads {
   width: 100%;
-  height: 500px;
-  background-color: #111;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 100px 0;
+  height: 600px;
+  position: relative;
+}
+
+.ads > .ad_visual {
+  overflow: hidden;
+  background-color: skyblue;
+}
+.ads > .ad_visual > img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.ad_content {
+  width: 1280px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -640px;
+}
+
+.ad_content > div > span {
+  width: fit-content;
+  height: fit-content;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 4px 25px;
   box-sizing: border-box;
 }
 
-.ads > div {
-  width: 1280px;
-  margin: 0 auto;
+.ad_content h2 {
+  margin-top: 20px;
+  font-size: 58px;
+  line-height: 82px;
+  color: #fff;
+  margin-bottom: 150px;
 }
 
+/* 다운로드 버튼 */
 .btn_wrap {
   display: flex;
   justify-content: center;
 }
 
-.ads > div > h2 {
-  width: fit-content;
-  height: fit-content;
-  font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  color: #ddd;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  padding: 4px 14px;
-  box-sizing: border-box;
-}
-
-/* 4*2 슬라이더 */
-.swiper {
-  width: 1280px;
-  height: 820px;
+.btn_wrap > a {
   display: flex;
-}
-
-.card_game_img > img {
-  width: 305px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
-  box-sizing: border-box;
-}
-
-.card_game_text {
-  width: 305px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 0px 0px 20px 20px;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-.card_game_text {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.card_game_text > .chips {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
-}
-
-.chips > div {
-  font-size: 12px;
-  font-weight: 400;
-  background-color: #f1f1f3;
-  border-radius: 30px;
-  padding: 4px 14px;
-  box-sizing: border-box;
-}
-
-.card_game_text p {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.card_game_text span {
-  font-size: 14px;
-  font-weight: 300;
-  color: #666;
-  text-align: right;
+  gap: 12px;
+  width: 210px;
+  height: 56px;
+  background-color: #971cef;
+  border-radius: 56px;
+  color: #fff;
 }

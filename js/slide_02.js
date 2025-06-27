@@ -1,7 +1,7 @@
 let swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   grid: {
-    rows: 2,
+    rows: 1,
     fill: 'row',
   },
   spaceBetween: 20,

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="../../css/header.css" />
     <link rel="stylesheet" href="../../css/game_recommend.css" />
-    <link rel="stylesheet" href="../../css/game.css" />
+    <link rel="stylesheet" href="../../css/slide.css" />
     <link rel="stylesheet" href="../../css/cta.css" />
     <link rel="stylesheet" href="../../css/footer.css" />
 
@@ -20,32 +20,38 @@
       <header id="header"></header>
       <main>
         <section class="ads">
-          <div>
-            <h2>AD</h2>
+          <div class="ad_visual">
+            <img src="../../img/ad_game_eldenring_01.jpg" />
           </div>
-          <!-- 다운로드 버튼 -->
-          <div class="btn_wrap">
-            <a href="#">
-              <div>
-                <img src="../../img/icon_googleplay.svg" alt="google play" />
-              </div>
-              <span>Android</span>
-            </a>
-            <a href="#">
-              <div>
-                <img src="../../img/icon_appstore.svg" alt="app store" />
-              </div>
-              <span>iOS</span>
-            </a>
-            <a href="#">
-              <div>
-                <img src="../../img/icon_windows.svg" alt="window" />
-              </div>
-              <span>Window</span>
-            </a>
+          <div class="ad_content">
+            <div>
+              <span>AD</span>
+              <h2>
+                엘든링 : 밤의 통치자<br />
+                협력 서바이벌 액션 출시<br />
+              </h2>
+            </div>
+            <!-- 다운로드 버튼 -->
+            <div class="btn_wrap">
+              <a href="#">
+                <div>
+                  <img src="../../img/icon_download_steam.svg" alt="google play" />
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <img src="../../img/icon_download_ps5.svg" alt="app store" />
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <img src="../../img/icon_download_xbox.svg" alt="window" />
+                </div>
+              </a>
+            </div>
           </div>
         </section>
-        <section id="game"></section>
+        <section id="slide"></section>
         <div id="cta"></div>
       </main>
       <footer id="footer"></footer>
@@ -59,9 +65,9 @@
         .then((data) => (document.getElementById('header').innerHTML = data));
 
       // 게임추천
-      fetch('../../component/game.html')
+      fetch('../../component/slide.html')
         .then((res) => res.text())
-        .then((data) => (document.getElementById('game').innerHTML = data));
+        .then((data) => (document.getElementById('slide').innerHTML = data));
 
       // CTA
       fetch('../../component/cta.html')
