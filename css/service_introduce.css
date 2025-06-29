@@ -1,0 +1,148 @@
+/* 세번째 섹션 */
+.sec_03 {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+}
+
+.con_03 {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.comment_01 > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #971cef;
+}
+
+.comment_01 > p {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #111;
+}
+
+.container_01 {
+  width: 640px;
+}
+
+.container_01 > img {
+  width: 500px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-top: 200px;
+  box-sizing: border-box;
+}
+
+.container_02 {
+  width: 640px;
+}
+
+.container_02 > img {
+  width: 500px;
+  margin-left: 140px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* 네번째 섹션 */
+.sec_04 {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.con_04 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.con_04 p {
+  margin-bottom: 50px;
+}
+
+.con_04 > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.comment > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #971cef;
+}
+
+.comment > p {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #111;
+}
+
+/* 다섯째 섹션 */
+.sec_05 {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.con_05 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.con_05 > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* 여섯째 섹션 */
+.sec_06 {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.con_06 {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.con_06 > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}

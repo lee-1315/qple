@@ -1,10 +1,11 @@
 @charset "utf-8";
 @import url(./reset.css);
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css");
 
 body {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
 }
 
@@ -41,8 +42,7 @@ body {
 
 .swiper {
   width: 1280px;
-  /* **임시조치 (추가) */
-  height: 720px;
+  /* 고정 높이 제거하여 그리드 레이아웃이 자동으로 계산되도록 함 */
   margin: 0 auto;
   /* position: absolute; */
   overflow: hidden;
@@ -50,7 +50,7 @@ body {
 
 .swiper-slide {
   /* **임시 조치 */
-  /* width: 305px; */
+  width: 305px;
   height: auto;
 }
 
@@ -58,11 +58,11 @@ body {
 .swiper-slide a {
   display: block;
   width: 305px;
-  height: 200px;
+  height: 400px;
 }
 
 .swiper-slide > a > img {
-  /* width: 305px; */
+  width: 305px;
   height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
@@ -70,7 +70,7 @@ body {
 
 /* 카드 */
 .card_game_text {
-  /* width: 305px; */
+  width: 305px;
   height: 200px;
   background-color: #fff;
   border-radius: 0px 0px 20px 20px;
