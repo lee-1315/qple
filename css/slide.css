@@ -1,11 +1,10 @@
 @charset "utf-8";
 @import url(./reset.css);
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
 
 body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
 }
 
@@ -32,7 +31,6 @@ body {
   width: 1600px;
   height: fit-content;
   margin: 0 auto;
-  /* padding-bottom: 80px; */
 }
 
 .swiper-button-prev,
@@ -42,19 +40,15 @@ body {
 
 .swiper {
   width: 1280px;
-  /* 고정 높이 제거하여 그리드 레이아웃이 자동으로 계산되도록 함 */
   margin: 0 auto;
-  /* position: absolute; */
   overflow: hidden;
 }
 
 .swiper-slide {
-  /* **임시 조치 */
   width: 305px;
   height: auto;
 }
 
-/* **임시 조치 */
 .swiper-slide a {
   display: block;
   width: 305px;
@@ -89,20 +83,33 @@ body {
 .chips > div {
   font-size: 12px;
   font-weight: 400;
-  background-color: #f1f1f3;
   border-radius: 30px;
   padding: 4px 14px;
   box-sizing: border-box;
+}
+
+.chips > .ps5 {
+  background-color: #98e4ff;
+}
+
+.chips > .nintendo {
+  background-color: #ffbcbd;
+}
+
+.chips > .pc {
+  background-color: #ddd;
 }
 
 .card_game_text p {
   font-size: 24px;
   font-weight: 600;
   margin-top: 12px;
-  margin-bottom: 70px;
 }
 
 .card_game_text span {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
   font-size: 14px;
   font-weight: 300;
   color: #666;

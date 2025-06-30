@@ -1,16 +1,15 @@
 @charset "utf-8";
 @import url(./reset.css);
 /* 웹폰트 */
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css');
 
 body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
 }
 
-.container {
+.con {
   width: 100%;
   height: auto;
 }
@@ -27,7 +26,7 @@ header {
   background-color: #fff;
 }
 
-header > .con {
+header > .container {
   width: 1280px;
   height: 100%;
   margin: 0 auto;
@@ -151,9 +150,13 @@ h1 {
   align-items: center;
 }
 
+.icons > a:last-child {
+  display: none;
+}
+
 .icons > a > img:hover {
-  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%)
-    hue-rotate(275deg) brightness(99%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4727%) hue-rotate(275deg) brightness(99%)
+    contrast(97%);
 }
 
 main {
@@ -613,7 +616,6 @@ main {
   width: 1600px;
   height: fit-content;
   margin: 0 auto;
-  /* padding-bottom: 80px; */
 }
 
 .swiper-button-prev,
@@ -624,13 +626,18 @@ main {
 .swiper {
   width: 1280px;
   margin: 0 auto;
-  /* position: absolute; */
   overflow: hidden;
 }
 
 .swiper-slide {
   width: 305px;
   height: auto;
+}
+
+.swiper-slide a {
+  display: block;
+  width: 305px;
+  height: 400px;
 }
 
 .swiper-slide a img {
@@ -642,6 +649,7 @@ main {
 
 /* 카드 */
 .card_game_text {
+  width: 305px;
   height: 200px;
   background-color: #fff;
   border-radius: 0px 0px 20px 20px;
@@ -660,20 +668,33 @@ main {
 .chips > div {
   font-size: 12px;
   font-weight: 400;
-  background-color: #f1f1f3;
   border-radius: 30px;
   padding: 4px 14px;
   box-sizing: border-box;
+}
+
+.chips > .ps5 {
+  background-color: #98e4ff;
+}
+
+.chips > .nintendo {
+  background-color: #ffbcbd;
+}
+
+.chips > .pc {
+  background-color: #ddd;
 }
 
 .card_game_text p {
   font-size: 24px;
   font-weight: 600;
   margin-top: 12px;
-  margin-bottom: 70px;
 }
 
 .card_game_text span {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
   font-size: 14px;
   font-weight: 300;
   color: #666;
@@ -683,11 +704,7 @@ main {
 /* 아홉번째 섹션 */
 .sec_09 {
   padding: 100px 0;
-  background: linear-gradient(
-    0deg,
-    rgba(66, 28, 145, 1) 0%,
-    rgba(37, 11, 91, 1) 100%
-  );
+  background: linear-gradient(0deg, rgba(66, 28, 145, 1) 0%, rgba(37, 11, 91, 1) 100%);
   box-sizing: border-box;
 }
 
@@ -750,14 +767,14 @@ footer {
 .list ul > li:first-child {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   color: #111;
 }
 
 .list li {
   font-size: 14px;
   line-height: 34px;
-  color: #555;
+  color: #111;
 }
 
 .description {

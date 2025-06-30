@@ -1,14 +1,15 @@
-let swiper = new Swiper(".swiper", {
+let swiper = new Swiper('.swiper', {
   slidesPerView: 4,
+  slidesPerGroup: 4,
   grid: {
     rows: 2,
-    fill: "row",
+    fill: 'row',
   },
   spaceBetween: 20,
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   /* pagination: {

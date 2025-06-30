@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .con {
+    width: 95%;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  .icons > a:last-child {
+    display: block;
+    margin-left: 20px;
+  }
+
+  header > .container {
+    position: relative;
+    width: 100%;
+    padding: 0px 30px;
+    background-color: antiquewhite;
+  }
+
+  .icons > a > img {
+    height: 24px;
+  }
+
+  .main_visual {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .sec_01,
+  .sec_02,
+  .sec_03,
+  .sec_04,
+  .sec_05,
+  .sec_06,
+  .sec_07,
+  .sec_08,
+  .sec_09 {
+    display: none;
+  }
+}
