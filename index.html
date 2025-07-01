@@ -14,9 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <div class="con">
+    <div class="wrapper">
       <header>
-        <div class="container">
+        <div class="con">
           <!-- 로고 -->
           <h1>
             <a href="/">
@@ -24,7 +24,7 @@
             </a>
           </h1>
 
-          <!-- 메뉴 -->
+          <!-- GNB -->
           <nav id="gnb">
             <ul>
               <li>
@@ -60,12 +60,6 @@
               </li>
               <li>
                 <a href="#">고객지원</a>
-                <div class="submenu_wrap">
-                  <ul class="submenu">
-                    <li><a href="#">사용 가이드</a></li>
-                    <li><a href="#">자주 묻는 질문</a></li>
-                  </ul>
-                </div>
               </li>
             </ul>
           </nav>
@@ -81,10 +75,14 @@
           </div>
         </div>
       </header>
+
       <main>
+        <!-- 메인 비주얼 -->
         <section class="main_visual">
-          <img src="./img/main_visual_01.jpg" alt="main_visual" />
-          <div class="content_01">
+          <div class="main_img">
+            <img src="./img/main_visual_01.jpg" alt="main_visual" />
+          </div>
+          <div class="main_content">
             <h2>
               콘솔게임 번개파티를<br />
               퀵플에서 간편하고 빠르게
@@ -113,10 +111,10 @@
           </div>
         </section>
 
-        <!-- 첫번째 섹션 -->
-        <section class="sec_01">
-          <div class="con_02">
-            <div class="bento_group_01">
+        <!-- 두번째 섹션 -->
+        <section class="sec_02">
+          <div class="con">
+            <div class="bento_box_wrap">
               <a href="#">
                 <div class="box_01">
                   <span>
@@ -138,7 +136,7 @@
               </a>
             </div>
 
-            <div class="bento_group_02">
+            <div class="bento_box_wrap">
               <a href="#">
                 <div class="box_03">
                   <span>
@@ -165,18 +163,18 @@
           </div>
         </section>
 
-        <!-- 두번째 섹션 -->
-        <section class="sec_02">
+        <!-- 세번째 섹션 -->
+        <section class="sec_03">
           <p>
             게임 번개챗을 확인하고 파티원과 게임을 즐기세요.<br />
             퀵플이라면 당신의 게임 라이프가 늘 설레일 거예요.
           </p>
         </section>
 
-        <!-- 세번째 섹션 -->
-        <section class="sec_03">
-          <div class="con_03">
-            <div class="container_01">
+        <!-- 네번째 섹션 -->
+        <section class="sec_04">
+          <div class="con">
+            <div class="introduce">
               <div class="comment_01">
                 <span>번개챗 생성</span>
                 <p>
@@ -188,7 +186,7 @@
               <img src="./img/main_sec_img_04.svg" alt="번개챗 생성" />
             </div>
 
-            <div class="container_02">
+            <div class="introduce">
               <img src="./img/main_sec_img_03.svg" alt="실시간 번개챗" />
               <div class="comment_01">
                 <span>실시간 번개챗</span>
