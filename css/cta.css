@@ -9,7 +9,7 @@ body {
     sans-serif;
 }
 
-.sec_09 {
+.sec_10 {
   padding: 100px 0;
   background: linear-gradient(0deg, rgba(66, 28, 145, 1) 0%, rgba(37, 11, 91, 1) 100%);
   box-sizing: border-box;
@@ -40,9 +40,10 @@ body {
   justify-content: center;
 }
 
-/* 다운로드 버튼 */
+/* 다운로드 버튼 (메인비주얼, CTA 공통) */
 .btn_wrap {
   display: flex;
+  flex-direction: row;
   gap: 24px;
 }
 
@@ -51,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  width: 210px;
+  width: 220px;
   height: 56px;
   background-color: #971cef;
   border-radius: 56px;
@@ -61,4 +62,9 @@ body {
 .btn_wrap span {
   font-size: 16px;
   font-weight: 500;
+}
+
+/* 버튼 호버 */
+.btn_wrap > a:hover {
+  background-color: #915dff;
 }

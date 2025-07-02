@@ -8,11 +8,10 @@
 
   .icons > a:last-child {
     display: flex;
-    margin-left: 24px;
   }
 
-  header > .container {
-    position: relative;
+  header > .con {
+    /* position: relative; */
     width: 100%;
     padding: 0px 30px;
   }
@@ -22,80 +21,121 @@
   }
 
   /* 메인 비주얼 */
-  .main_visual > img {
-    width: 100%;
-    height: 800px;
+  .main_img > img {
+    height: 95vh;
   }
 
-  .content_01 h2 {
-    font-size: 42px;
-    line-height: 62px;
-    margin-bottom: 60px;
+  .main_content {
+    width: 100%;
+    top: 65%;
+  }
+
+  .main_content > h2 {
+    font-size: 52px;
+    line-height: 72px;
   }
 
   .btn_wrap {
     flex-direction: column;
-    align-items: center;
   }
 
   .btn_wrap > a {
-    width: 90%;
+    width: 500px;
+    height: 80px;
+    line-height: 30px;
+    gap: 24px;
   }
 
-  /* 첫번째 섹션 */
-  .sec_01 {
-    height: auto;
+  .btn_wrap img {
+    height: 35px;
   }
 
-  .con_02 {
+  .btn_wrap span {
+    font-size: 30px;
+  }
+
+  /* 두번째 섹션 */
+  .sec_02 > .con {
     height: auto;
     padding: 80px 30px;
   }
 
+  /* 박스 */
   .box_01,
-  .box_02,
-  .box_03,
   .box_04 {
-    width: auto;
+    height: 500px;
   }
 
   .box_01,
-  .box_02,
-  .box_03,
   .box_04 > span {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 44px;
   }
 
-  .box_01,
-  .box_03 > span {
-    font-size: 32px;
-    line-height: 42px;
+  .box_01 {
+    flex-direction: column;
   }
 
   .box_01 > img {
-    width: 90px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .box_04 > .img_wrap {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .box_02,
   .box_03 {
-    height: 226px;
+    height: 100%;
   }
 
-  .img_wrap {
+  .box_02,
+  .box_03 > span {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  /* 세번째 섹션 */
+  .sec_03 {
+    padding: 80px 30px;
+  }
+
+  .sec_03 > p {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  /* 네번째 섹션 */
+  .sec_04 {
+    padding: 80px 30px;
+  }
+
+  .sec_04 > .con {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .introduce > img:first-child,
+  img:last-child {
+    margin: 0 auto;
+  }
+
+  .sec_04 > .con > .introduce:last-child {
     display: flex;
-    gap: 50px;
-    position: absolute;
-    left: 0%;
+    flex-direction: column-reverse;
+    background-color: antiquewhite;
   }
 
-  .img_wrap > img {
-    height: 50px;
+  .sec_04 img:first-child,
+  .sec_04 img:last-child {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
-  .sec_02,
-  .sec_03,
-  .sec_04,
   .sec_05,
   .sec_06,
   .sec_07,

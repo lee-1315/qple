@@ -21,7 +21,7 @@ header {
   background-color: #fff;
 }
 
-header > .container {
+header > .con {
   width: 1280px;
   height: 100%;
   margin: 0 auto;
@@ -143,6 +143,12 @@ h1 {
 .icons {
   display: flex;
   align-items: center;
+}
+
+/* 메뉴 아이콘 */
+.icons > a:last-child {
+  display: none;
+  margin-left: 24px;
 }
 
 .icons > a > img:hover {
