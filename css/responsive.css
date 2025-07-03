@@ -40,7 +40,7 @@
   }
 
   .btn_wrap > a {
-    width: 500px;
+    width: 450px;
     height: 80px;
     line-height: 30px;
     gap: 24px;
@@ -55,15 +55,14 @@
   }
 
   /* 두번째 섹션 */
-  .sec_02 > .con {
-    height: auto;
-    padding: 80px 30px;
+  .sec_02 {
+    padding: 100px 30px;
   }
 
   /* 박스 */
   .box_01,
   .box_04 {
-    height: 500px;
+    height: 600px;
   }
 
   .box_01,
@@ -111,34 +110,113 @@
 
   /* 네번째 섹션 */
   .sec_04 {
-    padding: 80px 30px;
+    padding: 100px 30px;
   }
 
   .sec_04 > .con {
     width: 100%;
-    flex-direction: column;
   }
 
-  .introduce > img:first-child,
-  img:last-child {
-    margin: 0 auto;
+  .description_01,
+  .description_02 {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-radius: 30px;
+    box-sizing: border-box;
   }
 
-  .sec_04 > .con > .introduce:last-child {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: antiquewhite;
+  .img_phone_01 > img {
+    width: 100%;
   }
 
-  .sec_04 img:first-child,
-  .sec_04 img:last-child {
-    margin-top: 80px;
-    margin-bottom: 80px;
+  .img_phone_02 > img {
+    width: 100%;
   }
 
-  .sec_05,
-  .sec_06,
-  .sec_07,
+  .description_01,
+  .description_02 > p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #111;
+  }
+
+  /* 다섯번째 섹션 */
+  .sec_05 {
+    padding: 100px 30px;
+  }
+
+  .sec_05 > .con {
+    width: 100%;
+  }
+
+  .sec_05 > .con > img {
+    width: 50%;
+  }
+
+  .comment > p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #111;
+  }
+
+  /* 여섯번째 섹션 */
+  .sec_06 {
+    padding: 100px 30px;
+  }
+
+  .sec_06 > .con {
+    width: 100%;
+  }
+
+  .sec_06 > .con > img {
+    width: 50%;
+  }
+
+  /* 일곱번째 섹션 */
+  .sec_07 {
+    padding: 100px 30px;
+  }
+
+  .sec_07 > .con {
+    width: 100%;
+  }
+
+  .sec_07 > .con > img {
+    width: 50%;
+  }
+
+  /* 여덞번째 섹션 */
+
+  /* 아홉번째 섹션 */
+  /* .sec_09 {
+    padding: 80px 30px;
+  }
+
+  .sec_09 > h3 {
+    width: 100%;
+  }
+
+  .swiper-area {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .swiper-slide a {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  } */
+
   .sec_08,
   .sec_09,
   footer {

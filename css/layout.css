@@ -342,7 +342,6 @@ main {
   height: auto;
   display: flex;
   justify-content: center;
-  background-color: #fff;
   padding: 100px 0px;
 }
 
@@ -353,41 +352,64 @@ main {
   gap: 24px;
 }
 
-/* 공통 */
-.comment_01 > span {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 80px;
-  color: #971cef;
+.introduce {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.comment_01 > p {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 62px;
-  color: #111;
+.description_01,
+.description_02 {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 30px;
+  box-sizing: border-box;
 }
 
-.introduce > img {
-  width: 500px;
+.img_phone_01 > img {
+  height: 100%;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   box-sizing: border-box;
 }
 
-/* 이미지, 타이틀 */
-.sec_04 img:first-child {
-  margin-left: 140px;
-  margin-bottom: 100px;
+.img_phone_02 > img {
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  box-sizing: border-box;
 }
 
-.sec_04 img:last-child {
-  margin-top: 200px;
+.description_01 > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #971cef;
 }
 
-.comment_01:last-child {
-  margin-left: 100px;
+.description_02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description_02 > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #971cef;
+}
+
+.description_01,
+.description_02 > p {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #111;
 }
 
 /* 다섯번째 섹션 */
@@ -600,7 +622,7 @@ main {
 /* 아홉번째 섹션 */
 .sec_09 {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #5624c0;
   padding: 100px 0px;
   box-sizing: border-box;
@@ -618,8 +640,8 @@ main {
 /* 4*2 슬라이더 */
 .swiper-area {
   position: relative;
-  width: 1600px;
-  height: fit-content;
+  width: 80%;
+  height: 970px;
   margin: 0 auto;
 }
 
@@ -635,26 +657,26 @@ main {
 }
 
 .swiper-slide {
-  width: 305px;
+  width: 100%;
   height: auto;
 }
 
 .swiper-slide a {
   display: block;
-  width: 305px;
-  height: 400px;
+  /* width: 100%;
+  height: auto; */
 }
 
 .swiper-slide a img {
-  width: 305px;
-  height: 200px;
+  /* width: 305px;
+  height: 200px; */
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
 /* 카드 */
 .card_game_text {
-  width: 305px;
+  /* width: 305px; */
   height: 200px;
   background-color: #fff;
   border-radius: 0px 0px 20px 20px;
