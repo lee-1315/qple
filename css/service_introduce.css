@@ -1,9 +1,9 @@
+/* 네번째 섹션 */
 .sec_04 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  background-color: #2d125f;
   padding: 100px 0px;
 }
 
@@ -14,39 +14,165 @@
   gap: 24px;
 }
 
-/* 공통 */
-.comment_01 > span {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 80px;
-  color: #971cef;
+.introduce {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.comment_01 > p {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 62px;
-  color: #111;
+.description_01,
+.description_02 {
+  width: 60%;
+  height: 400px;
+  position: relative;
+  border-radius: 30px;
+  box-sizing: border-box;
 }
 
-.introduce > img {
-  width: 500px;
+.img_phone_01 > img {
+  height: 100%;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   box-sizing: border-box;
 }
 
-/* 이미지, 타이틀 */
-.sec_04 img:first-child {
-  margin-left: 140px;
+.img_phone_02 {
+  margin-left: auto;
+}
+
+.img_phone_02 > img {
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  box-sizing: border-box;
+}
+
+.description_01 > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #971cef;
+}
+
+.description_02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description_02 > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #971cef;
+}
+
+.description_01,
+.description_02 > p {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #111;
+}
+
+/* 다섯번째 섹션 */
+.sec_05 {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.sec_05 > .con {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sec_05 > .con > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
   margin-bottom: 100px;
+  box-sizing: border-box;
 }
 
-.sec_04 img:last-child {
-  margin-top: 200px;
+.sec_05 > .con > .comment > img {
+  width: 80%;
 }
 
-.comment_01:last-child {
-  margin-left: 100px;
+.sec_05 > .con p {
+  margin-bottom: 50px;
+}
+
+/* 공통 */
+.comment > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #971cef;
+}
+
+.comment > p {
+  width: 60%;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #111;
+}
+
+/* 여섯번째 섹션 */
+.sec_06 {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.sec_06 > .con {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sec_06 > .con > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* 일곱번째 섹션 */
+.sec_07 {
+  width: 100%;
+  height: fit-content;
+  padding: 50px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.sec_07 > .con {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sec_07 > .con > img {
+  width: 640px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
 }
