@@ -44,8 +44,8 @@ let swiper = new Swiper(".swiper", {
     },
 
     1024: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
       grid: {
         rows: 2,
         fill: "row",
