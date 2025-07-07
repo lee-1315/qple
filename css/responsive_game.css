@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* 메인 비주얼 */
+  .game_content_01 {
+    left: 30px;
+  }
+
+  /* 두번째 섹션 */
+  .game_content_02 > div > img {
+    display: none;
+  }
+
+  /* 세번쩨 섹션 */
+  .sec_03 {
+    width: 100%;
+    height: auto;
+  }
+
+  .game_content_03 {
+    width: 100%;
+  }
+
+  .award_wrap {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .sec_01 {
+    width: 100%;
+    height: 500px;
+  }
+}
