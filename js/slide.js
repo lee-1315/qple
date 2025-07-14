@@ -33,8 +33,8 @@ let swiper = new Swiper('.swiper', {
     },
 
     768: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
       grid: {
         rows: 2,
         fill: 'row',
@@ -44,6 +44,16 @@ let swiper = new Swiper('.swiper', {
     },
 
     1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+      spaceBetween: 20,
+    },
+
+    1920: {
       slidesPerView: 4,
       slidesPerGroup: 4,
       grid: {

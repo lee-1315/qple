@@ -22,16 +22,7 @@
 
   /* 메인 비주얼 */
   .main_img > img {
-    height: 95vh;
-  }
-
-  .main_content {
-    width: 100%;
-    top: 65%;
-  }
-
-  .main_content {
-    top: 60%;
+    height: 100vh;
   }
 
   .main_content > h2 {
@@ -48,7 +39,7 @@
     width: 350px;
     height: 60px;
     line-height: 30px;
-    gap: 17px;
+    gap: 20px;
   }
 
   .btn_wrap img {
