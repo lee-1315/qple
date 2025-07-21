@@ -191,7 +191,7 @@ main {
 }
 
 .main_content > h2 {
-  margin-top: 20px;
+  width: 55%;
   font-size: 58px;
   font-weight: 500;
   line-height: 82px;
@@ -268,10 +268,14 @@ main {
 .box_01 {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .box_04 {
   background-color: #971cef;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .box_01,
@@ -285,16 +289,19 @@ main {
 
 .box_01 > img {
   width: fit-content;
-  height: 70%;
+  height: fit-content;
   align-self: flex-end;
 }
 
 .box_04 > .img_wrap {
-  height: 90%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
+  justify-content: space-evenly;
+}
+
+.img_wrap > img {
+  height: 100%;
+  align-self: flex-end;
 }
 
 .box_02,
@@ -375,7 +382,7 @@ main {
 }
 
 .img_phone_01 > img {
-  height: 100%;
+  width: fit-content;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
@@ -387,7 +394,7 @@ main {
 }
 
 .img_phone_02 > img {
-  height: 100%;
+  width: fit-content;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
@@ -425,7 +432,7 @@ main {
 /* 다섯번째 섹션 */
 .sec_05 {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: #fff;
   padding: 100px 0;
   box-sizing: border-box;
@@ -439,7 +446,7 @@ main {
 }
 
 .sec_05 > .con > img {
-  width: 640px;
+  width: fit-content;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
@@ -474,7 +481,7 @@ main {
 /* 여섯번째 섹션 */
 .sec_06 {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: #fff;
   padding: 100px 0;
   box-sizing: border-box;
@@ -488,7 +495,7 @@ main {
 }
 
 .sec_06 > .con > img {
-  width: 640px;
+  width: fit-content;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
@@ -499,7 +506,7 @@ main {
 /* 일곱번째 섹션 */
 .sec_07 {
   width: 100%;
-  height: fit-content;
+  height: auto;
   padding: 100px 0;
   background-color: #fff;
   position: relative;
@@ -513,7 +520,7 @@ main {
 }
 
 .sec_07 > .con > img {
-  width: 640px;
+  width: fit-content;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
@@ -568,6 +575,7 @@ main {
 }
 
 .swiper-slide a img {
+  width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -649,7 +657,6 @@ main {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -732,7 +739,7 @@ main {
 }
 
 .card_text span {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   color: #666;
   text-align: right;

@@ -22,13 +22,12 @@ let swiper = new Swiper('.swiper', {
   /* 반응형 설정 */
   breakpoints: {
     320: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       grid: {
-        rows: 2,
+        rows: 1,
         fill: 'row',
       },
-      spaceBetween: 10,
       navigation: false,
     },
 
