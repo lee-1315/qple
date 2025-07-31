@@ -3,6 +3,38 @@
    License: none (public domain)
 */
 
+/* 공통 디자인 시스템 */
+:root {
+  /* 컬러 */
+  --default-color: #111;
+  --content-bg-color: #250b5b;
+  --game-bg-color: #5624c0;
+  --main-color: #971cef;
+  --sub-color: #915dff;
+  --gray-color: #666;
+  /* 폰트 */
+  --xxl-font-size: 58px;
+  --xl-font-size: 42px;
+  --lg-font-size: 30px;
+  --md-font-size: 24px;
+  --sm-font-size: 22px;
+  --xs-font-size: 18px;
+  --xxs-font-size: 14px;
+  /* 줄간격 */
+  --xxl-line-height: 82px;
+  --xl-line-height: 62px;
+  --lg-line-height: 46px;
+  --md-line-height: 34px;
+  --sm-line-height: 32px;
+  --xs-line-height: 26px;
+  --xxs-line-height: 24px;
+  /* 폰트 굵기 */
+  --xl-font-weight: 700;
+  --lg-font-weight: 600;
+  --md-font-weight: 500;
+  --sm-font-weight: 400;
+}
+
 html,
 body,
 div,
@@ -120,7 +152,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -137,6 +169,8 @@ img {
   display: block;
   border: none;
   max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 * {

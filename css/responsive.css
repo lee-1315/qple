@@ -24,9 +24,9 @@
   }
 
   .main_content > h2 {
-    width: clamp(90%, 5vw, 70%);
+    /* width: clamp(90%, 5vw, 70%);
     font-size: clamp(30px, 5vw, 42px);
-    line-height: clamp(40px, 15vw, 62px);
+    line-height: clamp(40px, 15vw, 62px); */
   }
 
   /* 다운로드 버튼 (메인비주얼, CTA 공통) */
@@ -66,11 +66,13 @@
 
   .box_01 > img {
     height: clamp(35%, 15vw, 50%);
+    width: auto;
   }
 
   .img_wrap > img {
     width: 100%;
     height: clamp(5px, 15vw, 50%);
+    object-fit: contain;
   }
 
   .box_02,
@@ -111,10 +113,12 @@
 
   .img_phone_01 > img {
     width: 100%;
+    height: auto;
   }
 
   .img_phone_02 > img {
     width: 100%;
+    height: auto;
   }
 
   .description_01 > span {
@@ -139,8 +143,9 @@
   }
 
   .sec_05 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
   }
 
   /* 공통 */
@@ -160,8 +165,9 @@
     width: 95%;
   }
   .sec_06 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
   }
 
   /* 일곱번째 섹션 */
@@ -169,8 +175,9 @@
     width: 95%;
   }
   .sec_07 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
   }
 
   /* 여덞번째 섹션 */
@@ -215,7 +222,8 @@
 
   .card > img {
     width: clamp(300px, 70vw, 450px);
-    height: clamp(100px, 70vw, 250px);
+    height: auto;
+    max-height: 250px;
   }
 
   .card_text {
@@ -252,6 +260,8 @@
   /* 메인 비주얼 */
   .main_img > img {
     height: 57vh;
+    width: 100%;
+    object-fit: cover;
   }
 
   .main_content > h2 {
@@ -312,10 +322,12 @@
 
   .img_phone_01 > img {
     width: 100%;
+    height: auto;
   }
 
   .img_phone_02 > img {
     width: 100%;
+    height: auto;
   }
 
   .description_01 > span {
@@ -340,8 +352,9 @@
   }
 
   .sec_05 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
   }
 
   /* 공통 */
@@ -361,8 +374,9 @@
     width: 95%;
   }
   .sec_06 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
   }
 
   /* 일곱번째 섹션 */
@@ -370,8 +384,9 @@
     width: 95%;
   }
   .sec_07 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
   }
 
   /* 여덞번째 섹션 */
@@ -416,7 +431,8 @@
 
   .card > img {
     width: clamp(400px, 70vw, 450px);
-    height: clamp(200px, 70vw, 350px);
+    height: auto;
+    max-height: 350px;
   }
 
   .card_text {
@@ -636,10 +652,12 @@
 
   .img_phone_01 > img {
     width: 90%;
+    height: auto;
   }
 
   .img_phone_02 > img {
     width: 90%;
+    height: auto;
   }
 
   .description_01 > span {
@@ -660,8 +678,9 @@
 
   /* 다섯번째 섹션 */
   .sec_05 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
   }
 
   /* 공통 */
@@ -678,14 +697,16 @@
 
   /* 여섯번째 섹션 */
   .sec_06 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
   }
 
   /* 일곱번째 섹션 */
   .sec_07 > .con > img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
   }
 
   /* 여덞번째 섹션 */
