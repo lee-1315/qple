@@ -18,7 +18,7 @@ body {
 /* 헤더 */
 header {
   width: 100%;
-  height: 80px;
+  height: 90px;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +46,7 @@ h1 {
 /* GNB */
 #gnb > ul {
   width: fit-content;
-  height: 80px;
+  height: 90px;
   display: flex;
   align-items: center;
   gap: 80px;
@@ -63,7 +63,7 @@ h1 {
   display: block;
   transition: 0.3s;
   font-size: var(--xs-font-size);
-  font-weight: var(--lg-font-weight);
+  font-weight: var(--md-font-weight);
   text-align: center;
 }
 
@@ -236,7 +236,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: var(--content-bg-color);
-  padding: 100px 0px;
+  padding: var(--sec-padding);
   box-sizing: border-box;
 }
 
@@ -341,11 +341,13 @@ main {
 .box_02 > span:nth-child(2)::after {
   display: block;
   content: "추천게임";
-  width: 77px;
-  height: 42px;
+  width: fit-content;
+  height: auto;
+  padding: 0px 16px;
   background-color: var(--sub-color);
   border-radius: 42px;
-  font-size: var(--xxs-font-size);
+  font-size: var(--xxxs-font-size);
+  font-weight: var(--sm-font-weight);
   color: #fff;
   text-align: center;
   line-height: 42px;
@@ -371,7 +373,7 @@ main {
   width: 100%;
   height: auto;
   background-color: #f5f5f7;
-  padding: 100px 0;
+  padding: var(--sec-padding);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -390,7 +392,7 @@ main {
   height: auto;
   display: flex;
   justify-content: center;
-  padding: 100px 0px;
+  padding: var(--sec-padding);
 }
 
 .sec_04 > .con {
@@ -402,6 +404,7 @@ main {
 
 .introduce {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -410,7 +413,7 @@ main {
 .description_01,
 .description_02 {
   width: 60%;
-  height: 400px;
+  height: 350px;
   position: relative;
   border-radius: 30px;
 }
@@ -444,7 +447,7 @@ main {
   font-weight: var(--xl-font-weight);
   color: var(--main-color);
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .description_02 {
@@ -458,15 +461,21 @@ main {
   font-weight: var(--xl-font-weight);
   color: var(--main-color);
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.description_01,
+.description_01 > p {
+  font-size: var(--xl-font-size);
+  font-weight: var(--xl-font-weight);
+  line-height: var(--xl-line-height);
+  color: var(--default-color);
+}
+
 .description_02 > p {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 62px;
-  color: #111;
+  font-size: var(--xl-font-size);
+  font-weight: var(--xl-font-weight);
+  line-height: var(--xl-line-height);
+  color: var(--default-color);
 }
 
 /* 다섯번째 섹션 */
@@ -474,8 +483,7 @@ main {
   width: 100%;
   height: auto;
   background-color: #fff;
-  padding: 100px 0;
-  box-sizing: border-box;
+  padding: var(--sec-padding);
 }
 
 .sec_05 > .con {
@@ -491,13 +499,13 @@ main {
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
-  /* margin-bottom: 100px; */
   box-sizing: border-box;
   object-fit: cover;
 }
 
-.sec_05 > .con > .comment > img {
-  width: 80%;
+.sec_05 .comment > img {
+  width: fit-content;
+  height: auto;
 }
 
 .sec_05 > .con p {
@@ -506,18 +514,19 @@ main {
 
 /* 공통 */
 .comment > span {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 80px;
-  color: #971cef;
+  font-size: var(--sm-font-size);
+  font-weight: var(--xl-font-weight);
+  color: var(--main-color);
+  display: block;
+  margin-bottom: 30px;
 }
 
 .comment > p {
   width: 60%;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 62px;
-  color: #111;
+  font-size: var(--xl-font-size);
+  font-weight: var(--xl-font-weight);
+  line-height: var(--xl-line-height);
+  color: var(--default-color);
 }
 
 /* 여섯번째 섹션 */
@@ -525,8 +534,7 @@ main {
   width: 100%;
   height: auto;
   background-color: #fff;
-  padding: 100px 0;
-  box-sizing: border-box;
+  padding: var(--sec-padding);
 }
 
 .sec_06 > .con {
@@ -542,7 +550,6 @@ main {
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
-  /* margin-bottom: 100px; */
   box-sizing: border-box;
   object-fit: cover;
 }
@@ -551,7 +558,7 @@ main {
 .sec_07 {
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding: var(--sec-padding);
   background-color: #fff;
   position: relative;
 }
@@ -569,7 +576,6 @@ main {
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.05) -10px 10px 10px 7px;
-  /* margin-bottom: 100px; */
   box-sizing: border-box;
   object-fit: cover;
 }
@@ -578,25 +584,26 @@ main {
 .sec_09 {
   width: 100%;
   height: auto;
-  background-color: #5624c0;
-  padding: 100px 0px;
-  box-sizing: border-box;
+  background-color: var(--game-bg-color);
+  padding: var(--sec-padding);
   overflow: hidden;
 }
 
 .sec_09 > h3 {
   width: 1280px;
-  font-size: 42px;
+  font-size: var(--xl-font-size);
+  font-weight: var(--md-font-weight);
+  line-height: var(--xl-line-height);
   color: #fff;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 58px;
 }
 
 /* 4*2 슬라이더 */
 .swiper-area {
   position: relative;
   width: 80%;
-  height: 85vh;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -622,13 +629,14 @@ main {
 
 .swiper-slide a img {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
 /* 카드 */
 .card_game_text {
+  width: 100%;
   height: 200px;
   background-color: #fff;
   border-radius: 0px 0px 20px 20px;
@@ -645,6 +653,8 @@ main {
 }
 
 .chips > div {
+  width: fit-content;
+  height: auto;
   font-size: 12px;
   font-weight: 400;
   border-radius: 30px;
@@ -665,36 +675,42 @@ main {
 }
 
 .card_game_text p {
-  font-size: 24px;
-  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  font-size: var(--md-font-size);
+  font-weight: var(--lg-font-weight);
+  line-height: var(--md-line-height);
   margin-top: 12px;
 }
 
 .card_game_text span {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  font-size: 14px;
-  font-weight: 300;
-  color: #666;
+  display: block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: var(--xxxs-font-size);
+  font-weight: var(--sm-font-weight);
+  color: var(--gray-color);
   text-align: right;
 }
 
 /* 아홉번째 섹션 */
 .sec_08 {
   width: 100%;
-  height: 904px;
+  height: 900px;
   background-color: #250b5b;
-  padding: 100px 0px;
+  padding: var(--sec-padding);
   box-sizing: border-box;
 }
 
 .sec_08 > h3 {
   width: 1280px;
-  font-size: 42px;
+  font-size: var(--xl-font-size);
+  font-weight: var(--md-font-weight);
+  line-height: var(--xl-line-height);
   color: #fff;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 58px;
 }
 
 /* 리뷰 -  롤링텍스트 참고*/
@@ -758,15 +774,15 @@ main {
 }
 
 .card > img {
-  width: 500px;
-  height: auto;
-  max-height: 340px;
+  width: 460px;
+  height: 300px;
+  max-height: 320px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
 .card_text {
-  width: 500px;
+  width: 460px;
   height: 260px;
   background-color: #fff;
   border-radius: 0px 0px 20px 20px;
@@ -781,30 +797,31 @@ main {
 }
 
 .card_text p {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
+  font-size: var(--lg-font-size);
+  font-weight: var(--md-font-weight);
+  line-height: var(--lg-line-height);
 }
 
 .card_text span {
-  font-size: 17px;
-  font-weight: 500;
-  color: #666;
+  font-size: var(--xs-font-size);
+  font-weight: var(--md-font-weight);
+  color: var(--gray-color);
   text-align: right;
 }
 
 /* CTA */
 .sec_10 {
-  padding: 100px 0;
+  padding: var(--sec-padding);
   background: linear-gradient(
     0deg,
     rgba(66, 28, 145, 1) 0%,
     rgba(37, 11, 91, 1) 100%
   );
-  box-sizing: border-box;
 }
 
 .cta > .icon_group {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -816,12 +833,12 @@ main {
 }
 
 .cta > h2 {
-  font-size: 42px;
-  font-weight: 500;
-  line-height: 62px;
+  font-size: var(--xl-font-size);
+  font-weight: var(--md-font-weight);
+  line-height: var(--xl-line-height);
   color: #fff;
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 58px;
 }
 
 .cta > .btn_wrap {
@@ -833,14 +850,13 @@ main {
 footer {
   width: 100%;
   height: auto;
-  /* position: relative;
-  top: 80px; */
   padding: 80px 0px;
   background-color: #f1f1f3;
 }
 
 .navigation {
   width: 1280px;
+  height: auto;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -853,35 +869,40 @@ footer {
   margin-bottom: 100px;
 }
 
-.list > a {
-  font-size: 26px;
-  font-weight: 500;
-  color: #111;
+.list h3 {
+  font-size: var(--md-font-size);
+  font-weight: var(--md-font-weight);
+  color: var(--default-color);
 }
 
-.list ul > li:first-child {
-  font-size: 17px;
-  font-weight: 600;
+.list ul > li:nth-child(1) > a {
+  display: block;
+  font-size: var(--xxs-font-size);
+  font-weight: var(--lg-font-weight);
+  color: var(--default-color);
   margin-bottom: 14px;
-  color: #111;
 }
 
-.list li {
-  font-size: 14px;
-  line-height: 34px;
-  color: #111;
+.list ul > li ~ li > a {
+  font-size: var(--xxxs-font-size);
+  font-weight: var(--sm-font-weight);
+  line-height: var(--sm-line-height);
+  color: var(--gray-color);
 }
 
 .description {
   display: flex;
   gap: 40px;
-  font-size: 14px;
-  font-weight: 600;
   margin-bottom: 30px;
-  color: #555;
+}
+
+.description > a {
+  font-size: 12px;
+  font-weight: var(--lg-font-weight);
+  color: var(--gray-color);
 }
 
 .navigation > p {
-  font-size: 14px;
-  color: #555;
+  font-size: 13px;
+  color: var(--gray-color);
 }

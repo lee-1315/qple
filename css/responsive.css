@@ -23,12 +23,6 @@
     height: 42vh;
   }
 
-  .main_content > h2 {
-    /* width: clamp(90%, 5vw, 70%);
-    font-size: clamp(30px, 5vw, 42px);
-    line-height: clamp(40px, 15vw, 62px); */
-  }
-
   /* 다운로드 버튼 (메인비주얼, CTA 공통) */
   .btn_wrap {
     gap: clamp(14px, 5vw, 24px);

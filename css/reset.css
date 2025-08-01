@@ -18,8 +18,9 @@
   --lg-font-size: 30px;
   --md-font-size: 24px;
   --sm-font-size: 22px;
-  --xs-font-size: 18px;
-  --xxs-font-size: 14px;
+  --xs-font-size: 17px;
+  --xxs-font-size: 16px;
+  --xxxs-font-size: 14px;
   /* 줄간격 */
   --xxl-line-height: 82px;
   --xl-line-height: 62px;
@@ -27,12 +28,15 @@
   --md-line-height: 34px;
   --sm-line-height: 32px;
   --xs-line-height: 26px;
-  --xxs-line-height: 24px;
+  --xxs-line-height: 25px;
+  --xxxs-line-height: 24px;
   /* 폰트 굵기 */
   --xl-font-weight: 700;
   --lg-font-weight: 600;
   --md-font-weight: 500;
   --sm-font-weight: 400;
+  /* 섹션 패딩 */
+  --sec-padding: 100px 0px;
 }
 
 html,
