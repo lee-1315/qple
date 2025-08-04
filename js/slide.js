@@ -1,19 +1,19 @@
-let swiper = new Swiper('.swiper', {
+let swiper = new Swiper(".swiper", {
   slidesPerView: 4,
   slidesPerGroup: 4,
   grid: {
     rows: 2,
-    fill: 'row',
+    fill: "row",
   },
   spaceBetween: 20,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
     mousewheel: true,
     keyboard: true,
@@ -26,7 +26,7 @@ let swiper = new Swiper('.swiper', {
       slidesPerGroup: 1,
       grid: {
         rows: 1,
-        fill: 'row',
+        fill: "row",
       },
       navigation: false,
     },
@@ -36,7 +36,7 @@ let swiper = new Swiper('.swiper', {
       slidesPerGroup: 2,
       grid: {
         rows: 2,
-        fill: 'row',
+        fill: "row",
       },
       navigation: false,
     },
@@ -46,7 +46,7 @@ let swiper = new Swiper('.swiper', {
       slidesPerGroup: 2,
       grid: {
         rows: 2,
-        fill: 'row',
+        fill: "row",
       },
       spaceBetween: 15,
     },
@@ -56,7 +56,7 @@ let swiper = new Swiper('.swiper', {
       slidesPerGroup: 2,
       grid: {
         rows: 2,
-        fill: 'row',
+        fill: "row",
       },
       spaceBetween: 15,
       navigation: false,
@@ -67,7 +67,7 @@ let swiper = new Swiper('.swiper', {
       slidesPerGroup: 3,
       grid: {
         rows: 2,
-        fill: 'row',
+        fill: "row",
       },
       spaceBetween: 20,
     },
@@ -87,7 +87,7 @@ let swiper = new Swiper('.swiper', {
       slidesPerGroup: 4,
       grid: {
         rows: 2,
-        fill: 'row',
+        fill: "row",
       },
       spaceBetween: 20,
     },

@@ -219,6 +219,11 @@ main {
   gap: 12px;
 }
 
+.btn_wrap img {
+  width: 100%;
+  height: auto;
+}
+
 .btn_wrap span {
   font-size: var(--xs-font-size);
   font-weight: var(--sm-font-weight);
@@ -397,6 +402,7 @@ main {
 
 .sec_04 > .con {
   width: 1280px;
+  height: auto;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -697,7 +703,7 @@ main {
 /* 아홉번째 섹션 */
 .sec_08 {
   width: 100%;
-  height: 900px;
+  height: 800px;
   background-color: #250b5b;
   padding: var(--sec-padding);
   box-sizing: border-box;
@@ -716,55 +722,34 @@ main {
 /* 리뷰 -  롤링텍스트 참고*/
 .card_rolling {
   width: 100%;
-  height: 100%;
+  height: 500px;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
 }
 
-.card_rolling > .card_wrap_01,
-.card_wrap_02 {
+.card_rolling > .card_wrap_01 {
+  width: fit-content;
+  height: auto;
   display: flex;
   gap: 20px;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   will-change: transform;
   width: max-content;
-}
-
-.card_rolling > .card_wrap_01,
-.card_wrap_0 > .card {
   flex-shrink: 0;
+  animation: rolling 45s linear infinite;
+  left: 0;
 }
 
-.card_wrap_01 {
-  animation: rolling_01 12s linear infinite reverse;
-}
-
-.card_wrap_01 > .card:last-of-type {
-  margin-right: 20px;
-}
-
-.card_wrap_02 {
-  animation: rolling_02 12s linear infinite reverse;
-}
-
-@keyframes rolling_01 {
+@keyframes rolling {
   0% {
-    transform: translateX(0%);
+    transform: translateY(-50%) translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes rolling_02 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
+    transform: translateY(-50%) translateX(calc(-50% - 10px));
   }
 }
 
@@ -773,33 +758,42 @@ main {
   gap: 20px;
 }
 
+.card {
+  width: 400px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .card > img {
-  width: 460px;
-  height: 300px;
-  max-height: 320px;
+  width: 400px;
+  height: 280px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
 .card_text {
-  width: 460px;
-  height: 260px;
+  width: 400px;
+  height: 220px;
   background-color: #fff;
   border-radius: 0px 0px 20px 20px;
-  padding: 40px;
+  padding: 30px;
   box-sizing: border-box;
-}
-
-.card_text {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
+/* 카드 4개 + gap 3개 = 총 너비 계산 */
+/* 카드 4개: 400px × 4 = 1600px */
+/* gap 3개: 20px × 3 = 60px */
+/* 총 너비: 1660px */
+/* 애니메이션 이동 거리: 1660px ÷ 2 = 830px */
+
 .card_text p {
-  font-size: var(--lg-font-size);
+  font-size: var(--md-font-size);
   font-weight: var(--md-font-weight);
-  line-height: var(--lg-line-height);
+  line-height: var(--md-line-height);
 }
 
 .card_text span {
@@ -811,6 +805,8 @@ main {
 
 /* CTA */
 .sec_10 {
+  width: 100%;
+  height: auto;
   padding: var(--sec-padding);
   background: linear-gradient(
     0deg,
@@ -827,12 +823,16 @@ main {
 }
 
 .cta > .icon_group > img {
+  width: fit-content;
+  height: auto;
   padding: 20px;
   margin-bottom: 30px;
   box-sizing: border-box;
 }
 
 .cta > h2 {
+  width: 100%;
+  height: auto;
   font-size: var(--xl-font-size);
   font-weight: var(--md-font-weight);
   line-height: var(--xl-line-height);

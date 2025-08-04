@@ -82,6 +82,10 @@ main {
   padding: 30px;
   border-radius: 20px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .card_mini > p {
@@ -89,6 +93,14 @@ main {
   font-weight: 600;
   line-height: 52px;
   color: #971cef;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 .card_mini_rolling > .card_mini_wrap_01,
